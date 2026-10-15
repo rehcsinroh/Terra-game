@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cnm2twc8fgf8p"]
+
+[ext_resource type="Script" uid="uid://bimvbkctjqean" path="res://platform.gd" id="1_mi635"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(400, 40)
+
+[node name="Platform" type="StaticBody2D" unique_id=393916024]
+script = ExtResource("1_mi635")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1519926033]
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1581226487]
