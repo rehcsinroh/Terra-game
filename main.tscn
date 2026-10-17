@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://e3sxarjln6xe"]
 
 [ext_resource type="Script" uid="uid://bet5g3csbeq35" path="res://player.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cnm2twc8fgf8p" path="res://platform.tscn" id="2_0xm2m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
 size = Vector2(32, 48)
@@ -14,3 +15,8 @@ script = ExtResource("1_ig7tw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=159249496]
 shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1768848270]
+position_smoothing_enabled = true
+
+[node name="Platform" parent="." unique_id=393916024 instance=ExtResource("2_0xm2m")]
